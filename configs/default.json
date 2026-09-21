@@ -1,0 +1,47 @@
+{
+  "routing": {
+    "reject_max_score": 0.25,
+    "keep_min_score": 0.8
+  },
+  "model": {
+    "version": "heuristic-placeholder-v1",
+    "weights": {
+      "dimensions": 0.25,
+      "point_count": 0.2,
+      "point_density": 0.2,
+      "ground_alignment": 0.2,
+      "overlap": 0.15
+    }
+  },
+  "classes": {
+    "car": {
+      "dimension_ranges": {"length": [3.0, 5.5], "width": [1.4, 2.5], "height": [1.2, 2.2]},
+      "min_point_count": 4,
+      "density_range": [0.25, 15.0],
+      "max_abs_ground_offset": 0.35,
+      "max_iou": 0.15
+    },
+    "truck": {
+      "dimension_ranges": {"length": [5.0, 14.0], "width": [1.8, 3.5], "height": [2.0, 4.5]},
+      "min_point_count": 5,
+      "density_range": [0.08, 10.0],
+      "max_abs_ground_offset": 0.45,
+      "max_iou": 0.12
+    },
+    "pedestrian": {
+      "dimension_ranges": {"length": [0.2, 1.2], "width": [0.2, 1.2], "height": [1.0, 2.4]},
+      "min_point_count": 2,
+      "density_range": [0.5, 60.0],
+      "max_abs_ground_offset": 0.25,
+      "max_iou": 0.08
+    },
+    "default": {
+      "dimension_ranges": {"length": [0.1, 20.0], "width": [0.1, 10.0], "height": [0.1, 8.0]},
+      "min_point_count": 2,
+      "density_range": [0.05, 100.0],
+      "max_abs_ground_offset": 0.5,
+      "max_iou": 0.2
+    }
+  }
+}
+

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+.DS_Store
+.idea/
+.vscode/
+.env
+.venv/
+dist/
+build/
+*.egg-info/
+output/
+tmp/
+tmp_extract_pdf
+tmp_extract_pdf.m
